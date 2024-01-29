@@ -1,0 +1,42 @@
+/* Presets variables */
+:root{
+    /* main colors */
+    /* first pallete */
+    --bege: #f2e3c6;
+    --light-pink: #ffc6a5;
+    --pink: #e6324b;
+    --dark: #2b2b2b;
+    --light: #353634;
+
+    /* second pallete */
+    --yel-one: #efd018;
+    --yel-two: #f3dc35;
+    --yel-tree: #f7e853;
+    --yel-four: #fbf370;
+    --yel-five: #ffff8d;
+}
+
+
+/* Presets CSS */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: 'Fira Sans', sans-serif;
+
+    list-style: none;
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+
+}
+
+body{
+    background-color: var(--bege);
+    color: var(--dark);
+    height: 100vh;
+}
