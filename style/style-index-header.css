@@ -31,7 +31,7 @@ header .nav-bar li{
     box-sizing: border-box;
     display: inline-block;
     text-transform: capitalize;
-    padding: 2rem;
+    padding: 2rem auto;
     
 }
 
@@ -41,8 +41,8 @@ header .nav-bar li a{
     box-sizing: border-box;
     color: var(--brown);
     font-weight: 400;
-    padding: 0 2rem;
     position: relative;
+    padding: 0 0 0 8rem;
 
     transition: 1s ease-in-out  transform, 0.5s ease-in-out  color;
 
@@ -56,7 +56,7 @@ header .nav-bar li a::after{
     display: block;
     position: absolute;
     bottom: -1rem;
-    left: 0%;
+    left: 42%;
 
     transition: 0.18s ease-in-out  width;
 }
@@ -67,90 +67,37 @@ header .nav-bar li a:hover{
 }
 
 header .nav-bar li a:hover::after{
-    width: 100%;
+    width: 60%;
 }
 
-
-
-
-
-    
-
-header div .button1{
-    cursor: pointer;
-    /* font-family: 'Fira Sans', sans-serif; */
-    font-weight: 500;
-
-    text-transform: capitalize;
-    border: solid 0.2rem var(--brown);
-    outline: none;
-    border-radius: 1rem;
-    padding: 1rem 2rem;
-    background-color: var(--brown);
-    color: var(--white);
-    font-size: 1.6rem;
-
-    transition: 0.4s ease-in-out background-color, 0.6s ease-in-out color, 0.6s ease-in-out box-shadow;
-}
-
-header div .button1:hover{
-    box-sizing: border-box;
-    background-color: var(--bege);
+.cart .cart-link .cart-button i,
+.cart .favorite-link .favorite-button i{
     color: var(--brown);
-    box-shadow: 0 0 1rem var(--brown);
+    font-size: 3rem;
 }
 
-
-
-
-
-
-/* header menu cardapio */
-header.heading .nav-bar-search{
+.cart{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    gap: 3rem;
+    padding-right: 4%;
 }
 
-header.heading input.search{
-    margin: 0 10rem 0 5rem;
-    padding: 1.4rem;
-    height: 4rem;
-    width: 30rem;
-    border: none;
+.cart .cart-link .cart-button,
+.cart .favorite-link .favorite-button{
+    width: 5rem;
+    height: 5rem;
     outline: none;
-
-    background-color: var(--second-bege);
-    color: var(--light);
-    border: solid 0.2rem var(--brown);
-    border-radius: 1rem;   
-    font-weight: 500;                     
+    border: none;
+    border-radius: 1rem;
+    background-color: var(--bege);
+    cursor: pointer;
 
     transition: 0.2s ease-in-out;
 }
 
-header.heading input.search::selection{
-    background-color: var(--brown);
-    color: var(--white);
-}
-
-header.heading input.search::-webkit-search-cancel-button{
-    cursor: pointer;
-    position: relative;
-    right: -10px;
-    -webkit-appearance: none;
-    height: 20px;
-    width: 20px;
-    border-radius: 10px;
-    background: var(--brown);
-}
-
-header.heading input.search:hover,
-header.heading input.search:focus-visible{
-    background-color: var(--bege);
-    box-shadow: 0 0 0.5rem var(--brown);
-}
-
-header.heading input.search::placeholder{
-    color: var(--brown);
+.cart .cart-link .cart-button:hover,
+.cart .favorite-link .favorite-button:hover{
+    box-shadow: 0 0 10px 1px var(--brown);
 }

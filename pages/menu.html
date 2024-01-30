@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- Fim Imports -->
 
     <!-- metadados -->
@@ -16,28 +17,31 @@
     <link rel="shortcut icon" href="../assets/icon/favicon.svg" type="image/x-icon">
     <!-- Fim metadados -->
 
-    <title>Cardápio - Todos os nossos sabores</title>
+    <title>Assinatura - Assine e receba promoções em seu e-mail</title>
 </head>
 <body>
     
     <header class="heading display">
         <img src="../assets/svg/logo.svg" alt="logo-ki-café" class="logo-header">
 
-        <div class="nav-bar-search">
-            
+        <ul class="nav-bar">
+            <li><a href="../pages/index.html">página inicial</a></li>
+            <li><a href="../pages/menu.html">cardápio</a></li>
+            <li><a href="../pages/license.html">assinaturas</a></li>
+            <li><a href="../pages/about.html">sobre nós</a></li>
+        </ul>
 
-            <ul class="nav-bar">
-                <li><a href="../pages/index.html">página inicial</a></li>
-                <li><a href="../pages/menu.html">cardápio</a></li>
-                <li><a href="../pages/license.html">assinaturas</a></li>
-                <li><a href="../pages/about.html">sobre nós</a></li>
-            </ul>
+        <div class="cart">
 
-            <form action="../pages/menu.html">
-                <input type="search" class="search" placeholder="Pesquisar" required>
-            </form>
-            
-        </div><!--final nav-bar-search-->
+            <a href="../pages/others/cart.html" class="cart-link">
+                <button class="cart-button"><i class="bi bi-cart-dash"></i></button>
+            </a>
+
+            <a href="../pages/others/favorite.html" class="favorite-link">
+                <button class="favorite-button"><i class="bi bi-heart-fill"></i></i></button>
+            </a>
+
+        </div>
 
     </header><!--final header-->
 

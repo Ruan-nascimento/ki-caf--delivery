@@ -42,11 +42,16 @@ html{
 }
 
 html::-webkit-scrollbar{
-    background-color: var(--brown);
+    background-color: var(--second-bege);
 }
 
 body{
     background-color: var(--bege);
     color: var(--dark);
     height: 100vh;
+}
+
+h1::selection, h2::selection, h3::selection, h4::selection, p::selection, span::selection{
+    background-color: var(--brown);
+    color: var(--bege);
 }

@@ -1,0 +1,167 @@
+/* Imports fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Fim imports fonts */
+
+
+/* Section one */
+main.main-index{
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+
+}
+
+main section.section-one{
+    width: 100%;
+    height: 70vh;
+    background-image: url(../assets/img/plantation.jpg);
+    background-size: cover;
+
+}
+
+main section.section-one .overlay{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-image: linear-gradient(to bottom, var(--brown), rgb(34, 9, 9));
+    width: 100%;
+    height: 100%;
+    opacity: 30%;
+
+    cursor: pointer;
+
+    transition: opacity 0.5s ease-in-out;
+}
+
+h1.mark{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: var(--bege);
+    font-size: 15rem;
+    text-transform: uppercase;
+    opacity: 100%;
+    transition: 0.5s ease-in-out opacity;
+
+}
+
+
+
+h1.mark::selection{
+    background-color: var(--brown);
+}
+
+p.paragraph{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 5rem;
+    background-color: var(--second-bege);
+    color: var(--brown);
+    padding: 1rem;
+    border-radius: 15px;
+    opacity: 100%;
+    text-transform: capitalize;
+
+    transition: 0.7s ease-in-out opacity;
+    
+}
+
+p.paragraph::selection{
+    background-color: var(--brown);
+    color: var(--second-bege);
+}
+
+p.paragraph span.bra{
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #008000;
+}
+
+p.paragraph span.sile{
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #ffd900;
+}
+
+p.paragraph span.iro{
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #007fff;
+}
+
+p.paragraph span.brasileiro{
+    display: block;
+    background-color: var(--brown);
+    margin: 0 auto;
+    border-radius: 10px;
+    text-align: center;
+ 
+}
+
+p.paragraph span.bra::selection,
+p.paragraph span.sile::selection,
+p.paragraph span.iro::selection{
+    background-color: var(--bege);
+}
+
+main section.section-one .overlay:hover{
+    opacity: 90%;
+}
+
+
+/* Fim Section one */
+
+/* section two */
+
+.section-two{
+    border-top: var(--bege) 5px solid;
+    border-bottom: var(--bege) 5px solid;
+    background-image: linear-gradient(to bottom, var(--brown), rgb(34, 9, 9));
+}
+
+.section-two .box-two{
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4%;
+}
+
+.section-two .box-two .texts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    text-align: justify;
+    font-size: 2.3rem;
+    color: var(--white);
+
+    height: 110%;
+    width: 50%;
+}
+
+.section-two .box-two .image-coffee{
+    background-image: url(../assets/img/coffe-one.jpg);
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 10%;
+
+    padding: 2%;
+    height: 50vh;
+    width: 60rem;
+    margin-left: 6rem;
+
+}
+
+
+
+/* section two */
