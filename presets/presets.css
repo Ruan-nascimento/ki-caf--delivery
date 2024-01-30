@@ -42,7 +42,7 @@ html{
 }
 
 html::-webkit-scrollbar{
-    background-color: var(--second-bege);
+    background-color: var(--light-pink);
 }
 
 body{

@@ -113,9 +113,13 @@ main section.section-one .overlay:hover{
 
 /* Fim Section one */
 
+
+
+
 /* section two */
 
 .section-two{
+    position: relative;
     border-top: var(--bege) 5px solid;
     border-bottom: var(--bege) 5px solid;
     background-image: linear-gradient(to bottom, var(--brown), rgb(34, 9, 9));
@@ -162,6 +166,72 @@ main section.section-one .overlay:hover{
 
 }
 
+.section-two .overlay1{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgb(48, 33, 13), rgb(32, 13, 6), rgb(12, 7, 3));
+    background-color: black;
+    z-index: 9999999;
+    position: absolute;
+    opacity: 80%;
+
+    transition: 0.5s ease-in-out opacity;
+
+}
+
+.section-two .overlay1:hover{
+    opacity: 2%;
+}
 
 
-/* section two */
+/* Fim section two */
+
+
+
+/* section tree */
+
+.section-tree{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 60vh;
+    width: 100%;
+
+    background-image: url(../assets/svg/background.svg);
+
+    border-bottom: solid var(--brown) 4px;
+}
+
+.section-tree .box-tree{
+    
+    display: flex;
+    align-items: center;
+}
+
+.section-tree .box-tree .images-carrossel img{
+    height: 40%;
+    width: 20%;
+    margin: 2rem;
+    border-radius: 20px;
+    border: solid var(--brown) 1rem;
+
+    transition: 0.3s ease-in-out;
+}
+
+.section-tree .box-tree .images-carrossel img:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px 10px var(--second-bege);
+}
+
+
+/* fim section tree */
+
+
+
+/* section four */
+
+
+
+
+/* fim section four */
