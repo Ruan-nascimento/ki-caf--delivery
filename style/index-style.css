@@ -17,6 +17,8 @@ main section.section-one{
     background-image: url(../assets/img/plantation.jpg);
     background-size: cover;
 
+    border-bottom: solid 4px var(--second-bege);
+
 }
 
 main section.section-one .overlay{
@@ -115,17 +117,191 @@ main section.section-one .overlay:hover{
 
 
 
-
 /* section two */
 
 .section-two{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 120vh;
+    width: 100%;
+
+    background-image: url(../assets/svg/background.svg);
+
+    border-bottom: solid var(--brown) 4px;
+    border-top: solid 4px var(--brown);
+}
+
+.section-two .box-products{
+    margin: 0 15px;
+    background-color: var(--second-bege);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+
+    width: 100%;
+    max-width: 1440px;
+    height: 70%;
+    border-radius: 20px;
+
+    box-shadow: 0 0 10px 2px var(--brown);
+}
+
+.section-two .box-products .products{
+    background-color: var(--bege);
+    border: solid 2px var(--brown);
+    color: #008000;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+
+
+    width: 20%;
+    max-width: 20%;
+    height: 80%;
+    margin: 4%;
+    padding: 2%;
+    gap: 1.4rem;
+    border-radius: 20px;
+
+    cursor: pointer;
+
+    transition: 0.2s ease-in-out;
+
+    
+}
+
+.section-two .box-products .products:hover{
+    box-shadow: 0 0 12px 4px var(--brown);
+    transform: scale(1.05);
+}
+
+.section-two .box-products .product-image{
+    background-image: url(https://www.azoroasters.com/wp-content/uploads/2023/08/PETS.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 90%;
+    height: 60%;
+}
+
+.section-two .box-products .product-name{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.section-two .box-products .product-price{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    text-align:start;
+    color: #008000;
+}
+
+.section-two .box-products .product-price span{
+    font-size: 2.6rem;
+}
+
+.section-two .box-products .product-buy{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.5rem;
+
+    color: var(--bege);
+    background-color: #034203;
+
+    padding: 10px;
+    width: 100%;
+
+
+    transition: 0.2s ease-in-out, 0.5s ease-in-out transform;
+
+
+}
+
+.section-two .box-products .product-buy:hover{
+    background-color: #008000;
+    color: #fff;
+    box-shadow: 0 0 3px 1px #034203;
+    transform: skew(8deg);
+}
+
+.section-two .box-products .product-options{
+    display: flex;
+    gap: 1rem;
+    margin: 10px;
+}
+
+.section-two .box-products .product-options{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.section-two .box-products .product-options label{
+    display: inline-block;
+    bottom: -15px;
+    left: 0;
+
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.section-two .best-seller{
+    text-transform: uppercase;
+    font-size: 6rem;
+    color: var(--brown);
+}
+.section-two .best-seller .sale{
+    color: var(--bege);
+    padding: 0 20px;
+    border-radius: 20px;
+    background-color: var(--brown);
+    position: relative;
+}
+
+.section-two .best-seller .sale::after{
+   content: " ";
+   display: block;
+   position: absolute;
+   background-color: var(--second-bege);
+   width: 85%;
+   height: 4px;
+   bottom: 6px ;
+   left: 8%;
+
+
+}
+
+
+/* fim section two */
+
+
+
+
+
+/* section tree */
+
+.section-tree{
     position: relative;
     border-top: var(--bege) 5px solid;
     border-bottom: var(--bege) 5px solid;
     background-image: linear-gradient(to bottom, var(--brown), rgb(34, 9, 9));
 }
 
-.section-two .box-two{
+.section-tree .box-tree{
     width: 100%;
     height: 80vh;
     position: relative;
@@ -135,7 +311,7 @@ main section.section-one .overlay:hover{
     padding: 4%;
 }
 
-.section-two .box-two .texts{
+.section-tree .box-tree .texts{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -148,7 +324,7 @@ main section.section-one .overlay:hover{
     width: 50%;
 }
 
-.section-two .box-two .image-coffee{
+.section-tree .box-tree .image-coffee{
     background-image: url(../assets/img/coffe-one.jpg);
     background-size: cover;
     background-position: center;
@@ -166,7 +342,7 @@ main section.section-one .overlay:hover{
 
 }
 
-.section-two .overlay1{
+.section-tree .overlay1{
     width: 100%;
     height: 100%;
     background-image: linear-gradient(to bottom, rgb(48, 33, 13), rgb(32, 13, 6), rgb(12, 7, 3));
@@ -179,53 +355,12 @@ main section.section-one .overlay:hover{
 
 }
 
-.section-two .overlay1:hover{
+.section-tree .overlay1:hover{
     opacity: 2%;
 }
 
 
-/* Fim section two */
-
-
-
-/* section tree */
-
-.section-tree{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    height: 60vh;
-    width: 100%;
-
-    background-image: url(../assets/svg/background.svg);
-
-    border-bottom: solid var(--brown) 4px;
-}
-
-.section-tree .box-tree{
-    
-    display: flex;
-    align-items: center;
-}
-
-.section-tree .box-tree .images-carrossel img{
-    height: 40%;
-    width: 20%;
-    margin: 2rem;
-    border-radius: 20px;
-    border: solid var(--brown) 1rem;
-
-    transition: 0.3s ease-in-out;
-}
-
-.section-tree .box-tree .images-carrossel img:hover{
-    transform: scale(1.05);
-    box-shadow: 0 0 20px 10px var(--second-bege);
-}
-
-
-/* fim section tree */
+/* Fim section tree */
 
 
 
