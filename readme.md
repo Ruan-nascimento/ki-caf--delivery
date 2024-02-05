@@ -6,8 +6,6 @@
 
 Self project, no responsive, no finalized, just testing habilities.
 
-[🔗 Click here to acess](https://ruan-nascimento.github.io/i-caf--delivery/)
-
 
 ## 🛠 Tecnologies
 
