@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +8,13 @@
     <!-- Imports -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- Fim Imports -->
 
@@ -24,11 +28,12 @@
 
     <title>Ki Café - Delivery de café</title>
 </head>
+
 <body>
 
     <header class="heading display">
-        <img src="../assets/svg/logo.svg" alt="logo-ki-café" class="logo-header">
-        
+        <a href="../pages/index.html"><img src="../assets/svg/logo.svg" alt="logo-ki-café" class="logo-header"></a>
+
         <ul class="nav-bar">
             <li><a href="../pages/index.html">página inicial</a></li>
             <li><a href="../pages/menu.html">cardápio</a></li>
@@ -39,11 +44,13 @@
         <div class="cart">
 
             <a href="../pages/others/cart.html" class="cart-link">
+                <div class="quantity-cart">0</div>
                 <button class="cart-button"><i class="bi bi-cart-dash"></i></button>
             </a>
 
             <a href="../pages/others/favorite.html" class="favorite-link">
-                <button class="favorite-button"><i class="bi bi-heart-fill"></i></i></button>
+                <div class="quantity-heart">0</div>
+                <button class="favorite-button"><i class="bi bi-heart"></i></i></button>
             </a>
 
         </div>
@@ -51,11 +58,12 @@
 
     <main class="main-index">
 
-        <section class="section-one">
+        <section class="section-one" id="one">
 
             <div class="overlay">
                 <h1 class="mark">ki café</h1>
-                <p class="paragraph">o melhor do café <span class="brasileiro"><span class="bra">bra</span><span class="sile">sile</span><span class="iro">iro</span></span></p>
+                <p class="paragraph">o melhor do café <span class="brasileiro"><span class="bra">bra</span><span
+                            class="sile">sile</span><span class="iro">iro</span></span></p>
             </div>
 
         </section> <!--Fim Section one-->
@@ -66,29 +74,24 @@
             <h2 class="best-seller"><span class="more">mais</span> <span class="sale">vendidos</span></h2>
 
             <div class="box-products">
-                
+
 
                 <div class="product1 products">
 
-                    <h3 class="product-name">product name</h3>
-                    
+                    <h3 class="product-name">Chocolate Quente</h3>
+
                     <div class="product-image"></div>
 
-                    <h4 class="product-price">R$ <span>102</span>,00</h4>
+                    <h4 class="product-price">R$ <span>17</span>,90</h4>
 
                     <div class="product-options">
 
-                        <label for="g">g</label>
-                        <input type="radio" name="opt" id="g" title="Grão" class="option-coffee">
-                        
-                        <label for="mf">mf</label>
-                        <input type="radio" name="opt" id="mf" title="Moagem Fina" class="option-coffee">
-                        
-                        <label for="mm">mm</label>
-                        <input type="radio" name="opt" id="mm" title="Moagem Média" class="option-coffee">
-                        
-                        <label for="mg">mg</label>
-                        <input type="radio" name="opt" id="mg" title="Moagem Grossa" class="option-coffee">
+                        <label for="g">C/Açúcar</label>
+                        <input type="radio" name="opt" id="g" title="C/Açúcar" class="option-coffee">
+
+                        <label for="mf">S/Açúcar</label>
+                        <input type="radio" name="opt" id="mf" title="S/Açúcar" class="option-coffee">
+
 
                     </div>
 
@@ -98,25 +101,19 @@
 
                 <div class="product2 products">
 
-                    <h3 class="product-name">product name2</h3>
-                    
+                    <h3 class="product-name">Café Expresso</h3>
+
                     <div class="product-image"></div>
 
-                    <h4 class="product-price">R$ <span>1.202</span>,00</h4>
+                    <h4 class="product-price">R$ <span>9</span>,90</h4>
 
                     <div class="product-options">
 
-                        <label for="g">g</label>
-                        <input type="radio" name="opt2" id="g" title="Grão" class="option-coffee">
-                        
-                        <label for="mf">mf</label>
-                        <input type="radio" name="opt2" id="mf" title="Moagem Fina" class="option-coffee">
-                        
-                        <label for="mm">mm</label>
-                        <input type="radio" name="opt2" id="mm" title="Moagem Média" class="option-coffee">
-                        
-                        <label for="mg">mg</label>
-                        <input type="radio" name="opt2" id="mg" title="Moagem Grossa" class="option-coffee">
+                        <label for="g1">C/Açúcar</label>
+                        <input type="radio" name="opt1" id="g1" title="C/Açúcar" class="option-coffee">
+
+                        <label for="mf1">S/Açúcar</label>
+                        <input type="radio" name="opt1" id="mf1" title="S/Açúcar" class="option-coffee">
 
                     </div>
 
@@ -126,25 +123,41 @@
 
                 <div class="product3 products">
 
-                    <h3 class="product-name">product name3</h3>
-                    
+                    <h3 class="product-name">Café Gourmet</h3>
+
                     <div class="product-image"></div>
 
-                    <h4 class="product-price">R$ <span>345</span>,00</h4>
+                    <h4 class="product-price">R$ <span>23</span>,49</h4>
 
                     <div class="product-options">
 
-                        <label for="g">g</label>
-                        <input type="radio" name="opt3" id="g" title="Grão" class="option-coffee">
-                        
-                        <label for="mf">mf</label>
-                        <input type="radio" name="opt3" id="mf" title="Moagem Fina" class="option-coffee">
-                        
-                        <label for="mm">mm</label>
-                        <input type="radio" name="opt3" id="mm" title="Moagem Média" class="option-coffee">
-                        
-                        <label for="mg">mg</label>
-                        <input type="radio" name="opt3" id="mg" title="Moagem Grossa" class="option-coffee">
+                        <label for="g2">C/Açúcar</label>
+                        <input type="radio" name="opt3" id="g2" title="C/Açúcar" class="option-coffee">
+
+                        <label for="mf2">S/Açúcar</label>
+                        <input type="radio" name="opt3" id="mf2" title="S/Açúcar" class="option-coffee">
+
+                    </div>
+
+                    <a href="#" class="product-buy">comprar</a>
+
+                </div>
+
+                <div class="product4 products">
+
+                    <h3 class="product-name">Cappuccino</h3>
+
+                    <div class="product-image"></div>
+
+                    <h4 class="product-price">R$ <span>29</span>,90</h4>
+
+                    <div class="product-options">
+
+                        <label for="g3">C/Açúcar</label>
+                        <input type="radio" name="opt4" id="g3" title="C/Açúcar" class="option-coffee">
+
+                        <label for="mf3">S/Açúcar</label>
+                        <input type="radio" name="opt4" id="mf3" title="S/Açúcar" class="option-coffee">
 
                     </div>
 
@@ -154,37 +167,123 @@
 
 
             </div>
-            
+
 
         </section> <!--Fim section two-->
 
 
         <section class="section-tree">
 
-            <div class="box-tree">
+            <h2 class="title3">avaliações</h2>
 
-                <div class="texts">
+            <div class="asseesments">
 
-                    <h2 class="title">o que café te lembra?</h2>
-                    
-                    <p class="title-text">Acreditamos no potencial do café em criar momentos especiais, basta uma oportunidade. Defendemos desde sempre a ideia de fornecer um café de qualidade e sem frescura. Prezamos também pela sustentabilidade e a responsabilidade social em todo o nosso processo de produção, desde a seleção de fazendas parceiras até a entrega de nossos produtos finais. Acreditamos que o café é mais do que apenas uma bebida, pode ser uma forma de conectar pessoas, culturas e histórias.</p>
-
+                <div class="asseesments-box">
+                    <img src="../assets/img/perfil/homem1.jpg" alt="" class="perfil">
+                    <h3 class="name">luiz dias</h3>
+                    <div class="stars">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                    <p class="description">o café vem quentinho e a qualidade é impecável, simplesmente incrivel</p>
                 </div>
 
-                <div class="image-coffee"></div>
+                <div class="asseesments-box">
+                    <img src="../assets/img/perfil/mulher1.jpg" alt="" class="perfil">
+                    <h3 class="name">maria clara silva</h3>
+                    <div class="stars">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star"></i>
+                    </div>
+                    <p class="description">demorou uns 30 minutos a mais para chegar, porém por algum milagre do
+                        entregador, chegou super quente, uma delicia o cappuccino</p>
+                </div>
 
-                <div class="overlay1"></div>
+                <div class="asseesments-box">
+                    <img src="../assets/img/perfil/homem2.jpg" alt="" class="perfil">
+                    <h3 class="name">ruan carlos</h3>
+                    <div class="stars">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                    <p class="description">simplesmente incrivel</p>
+                </div>
 
-                
+                <div class="asseesments-box">
+                    <img src="../assets/img/perfil/homem3.jpg" alt="" class="perfil">
+                    <h3 class="name">mateus goes</h3>
+                    <div class="stars">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                    <p class="description">amei, a entrega, o sabor, como eles são atenciosos na plataforma, incrivel
+                    </p>
+                </div>
+
+                <div class="asseesments-box">
+                    <img src="../assets/img/perfil/mulher2.jpg" alt="" class="perfil">
+                    <h3 class="name">sarah liziane</h3>
+                    <div class="stars">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star"></i>
+                    </div>
+                    <p class="description">so achei o entregador triste, mas fora isso tudo ótimo</p>
+                </div>
+
+                <div class="asseesments-box">
+                    <img src="../assets/img/perfil/homem4.jpg" alt="" class="perfil">
+                    <h3 class="name">paulo inácio</h3>
+                    <div class="stars">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                    <p class="description">pronto pra começar o dia com o café gourmet da ki-café</p>
+                </div>
 
             </div>
 
         </section><!--fim section tree-->
 
+        <footer>
 
- 
+            <div class="line1">
+                <a href="#one"><img src="../assets/svg/logo.svg" alt="" class="logo-footer"></a>
+                <h2 class="coffee-name">ki-café</h2>
+                <h2 class="rights">&#169 all rights reserveds</h2>
+            </div>
+
+            <ul class="info">
+                <li><a href="#" class="adress">rua vigário belo</a></li>
+                <li><a href="#" class="cep">57.940-000</a></li>
+                <li><a href="#" class="tel"> (82) 9 9323-5559</a></li>
+                <li><a href="#" class="email">ruan.nascimento019@gmail.com</a></li>
+            </ul>
+    
+            <img src="../assets/img/pagamento.png" alt="formas de pagamento" class="payments">
+    
+        </footer>
 
     </main> <!--Fim main-->
 
+
 </body>
+
 </html>

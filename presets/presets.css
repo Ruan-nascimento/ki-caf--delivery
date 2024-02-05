@@ -35,7 +35,7 @@
     text-decoration: none;
 }
 
-html{
+html, body{
     scroll-behavior: smooth;
     font-size: 62.5%;
 
@@ -51,7 +51,7 @@ body{
     height: 100vh;
 }
 
-h1::selection, h2::selection, h3::selection, h4::selection, p::selection, span::selection{
+a::selection, button::selection, h1::selection, h2::selection, h3::selection, h4::selection, p::selection, span::selection{
     background-color: var(--brown);
     color: var(--bege);
 }

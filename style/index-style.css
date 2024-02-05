@@ -125,8 +125,9 @@ main section.section-one .overlay:hover{
     justify-content: space-around;
     align-items: center;
 
-    height: 120vh;
+    height: 100vh;
     width: 100%;
+    padding: 0 50px;
 
     background-image: url(../assets/svg/background.svg);
 
@@ -145,7 +146,7 @@ main section.section-one .overlay:hover{
 
     width: 100%;
     max-width: 1440px;
-    height: 70%;
+    height: 75%;
     border-radius: 20px;
 
     box-shadow: 0 0 10px 2px var(--brown);
@@ -162,12 +163,11 @@ main section.section-one .overlay:hover{
     justify-content: end;
 
 
-    width: 20%;
+    width: 25%;
     max-width: 20%;
-    height: 80%;
-    margin: 4%;
+    height: 70%;
+    margin: 2%;
     padding: 2%;
-    gap: 1.4rem;
     border-radius: 20px;
 
     cursor: pointer;
@@ -179,16 +179,45 @@ main section.section-one .overlay:hover{
 
 .section-two .box-products .products:hover{
     box-shadow: 0 0 12px 4px var(--brown);
+    background-color: rgba(90, 26, 26, .1);
     transform: scale(1.05);
 }
 
 .section-two .box-products .product-image{
-    background-image: url(https://www.azoroasters.com/wp-content/uploads/2023/08/PETS.jpg);
-    background-size: cover;
-    background-position: center;
     width: 90%;
     height: 60%;
+    border-radius: 10px;
+    box-shadow: inset -2px -2px rgba(0, 0, 0, .2);
+    margin: 20px 0;
 }
+
+
+/* Images editions */
+.section-two .box-products .product1 .product-image{
+    background-image: url(../assets/img/coffee/cocoa-coffee.jpg);
+    background-position: cover;
+    background-size: cover;
+}
+
+.section-two .box-products .product2 .product-image{
+    background-image: url(../assets/img/coffee/express-coffee.jpg);
+    background-position: cover;
+    background-size: cover;
+}
+
+.section-two .box-products .product3 .product-image{
+    background-image: url(../assets/img/coffee/gourmet-coffee.jpg);
+    background-position: cover;
+    background-size: cover;
+}
+
+.section-two .box-products .product4 .product-image{
+    background-image: url(../assets/img/coffee/cappuccino.jpg);
+    background-position: cover;
+    background-size: cover;
+}
+
+/* Images editions fim*/
 
 .section-two .box-products .product-name{
     font-family: 'Poppins', sans-serif;
@@ -277,10 +306,10 @@ main section.section-one .overlay:hover{
    display: block;
    position: absolute;
    background-color: var(--second-bege);
-   width: 85%;
+   width: 100%;
    height: 4px;
    bottom: 6px ;
-   left: 8%;
+   left: 0%;
 
 
 }
@@ -295,68 +324,100 @@ main section.section-one .overlay:hover{
 /* section tree */
 
 .section-tree{
-    position: relative;
-    border-top: var(--bege) 5px solid;
-    border-bottom: var(--bege) 5px solid;
-    background-image: linear-gradient(to bottom, var(--brown), rgb(34, 9, 9));
-}
-
-.section-tree .box-tree{
+    height: 100vh;
     width: 100%;
-    height: 80vh;
+
+    padding: 70px 50px;
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 4%;
+
+    background-image: url(../assets/svg/background.svg);
+    background-size: cover;
 }
 
-.section-tree .box-tree .texts{
+.section-tree h2.title3{
+    position: absolute;
+    top: 25px;
+    left: 38%;
+    text-transform: uppercase;
+    font-size: 60px;
+
+    color: var(--brown);
+    color: var(--second-bege);
+    background-color: var(--brown);
+    border-radius: 25px;
+    padding: 10px 15px;
+}
+
+.section-tree h2.title3::after{
+    content: " ";
+    position: absolute;
+    width: 215px;
+    height: 5px;
+    bottom: 16px;
+    left: -1%;
+    background-color: var(--bege);
+}
+
+.section-tree .asseesments{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+
+    background-color: #f7ecd881;
+    border-radius: 25px;
+
+    padding: 40px;
+    margin-top: 80px;
+
+    transition: box-shadow 0.3s ease;
+}
+.section-tree .asseesments:hover{
+    box-shadow: rgba(0, 0, 0, .5) 0 0 10px;
+}
+
+.section-tree .asseesments .asseesments-box{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    gap: 5px;
 
-    text-align: justify;
-    font-size: 2.3rem;
-    color: var(--white);
-
-    height: 110%;
-    width: 50%;
-}
-
-.section-tree .box-tree .image-coffee{
-    background-image: url(../assets/img/coffe-one.jpg);
-    background-size: cover;
-    background-position: center;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    border-radius: 10%;
-
-    padding: 2%;
-    height: 50vh;
-    width: 60rem;
-    margin-left: 6rem;
-
-}
-
-.section-tree .overlay1{
-    width: 100%;
     height: 100%;
-    background-image: linear-gradient(to bottom, rgb(48, 33, 13), rgb(32, 13, 6), rgb(12, 7, 3));
-    background-color: black;
-    z-index: 9999999;
-    position: absolute;
-    opacity: 80%;
+    width: 100%;
+    border-radius: 20px;
+    padding: 20px;
 
-    transition: 0.5s ease-in-out opacity;
+    background-color: var(--white);
 
+    box-shadow: inset -3px -3px rgba(0, 0, 0, .2);
+
+    transition: transform 0.3s ease;
+    cursor: pointer;
 }
 
-.section-tree .overlay1:hover{
-    opacity: 2%;
+.section-tree .asseesments .asseesments-box:hover{
+    transform: scale(1.02);
+}
+
+.section-tree .asseesments h3.name{
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+.section-tree .asseesments .stars{
+    color: #ffd900;
+    font-size: 13px;
+}
+
+.section-tree .asseesments p.description{
+    text-transform: capitalize;
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+.section-tree .asseesments img.perfil{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
 }
 
 
@@ -364,9 +425,68 @@ main section.section-one .overlay:hover{
 
 
 
-/* section four */
+/* footer */
+
+footer{
+    background-color: white;
+    padding: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: solid var(--brown) 3px;
+}
+
+img.payments{
+ 
+    height: 100px;
+}
+
+.line1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--bege);
+    padding: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+
+    transition: box-shadow 0.5s ease, transform 0.1s ease;
+    
+}
+
+.line1:hover{
+    box-shadow: rgba(0, 0, 0, .2) 4px 4px;
+    transform: scale(1.01);
+}
+
+h2.rights{
+    margin-top: 10px;
+}
+
+a img.logo-footer{
+    height: 100px;
+}
+
+h2.coffee-name{
+    font-size: 30px;
+    text-transform: uppercase;
+    background-color: var(--brown);
+    padding: 10px 20px;
+    color: var(--bege);
+}
+
+footer .info{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    font-size: 20px;
+    text-transform: capitalize;
+    
+}
+
+footer .info a{
+    color: var(--brown);
+}
 
 
-
-
-/* fim section four */

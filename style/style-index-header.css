@@ -94,10 +94,37 @@ header .nav-bar li a:hover::after{
     background-color: var(--bege);
     cursor: pointer;
 
-    transition: 0.2s ease-in-out;
+    
 }
 
-.cart .cart-link .cart-button:hover,
-.cart .favorite-link .favorite-button:hover{
-    box-shadow: 0 0 10px 1px var(--brown);
+
+
+.cart .cart-link, 
+.favorite-link{
+    position: relative;
 }
+
+.cart .cart-link .quantity-cart, 
+.cart .favorite-link .quantity-heart{
+    font-size: 15px;
+    text-align: center;
+    color: var(--bege);
+
+    background-color: brown;
+    border-radius: 50%;
+
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 5px;
+    top: 2px;
+    z-index: 9999;
+
+    transition: 0.1s ease-in-out outline;
+}
+
+.cart .cart-link .quantity-cart:hover, 
+.cart .favorite-link .quantity-heart:hover{
+    outline: solid rgba(0, 0, 0, .2) 10px;
+}
+
